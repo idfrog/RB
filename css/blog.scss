@@ -1,0 +1,52 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+@font-face {
+  font-family: 'Calendas Plus';
+  src: url('/font/Calendas-Plus-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Calendas Plus';
+  src: url('/font/Calendas-Plus-Bold.woff') format('woff');
+  font-weight: bold;
+}
+
+// Our variables
+$base-font-family: Aileron, Helvetica, Arial, sans-serif;
+
+$serif-font-family: Calendas Plus, serif;
+
+$base-font-size:   16px;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.67;
+
+$spacing-unit:     50px;
+
+$text-color:       #333;
+$background-color: #fdfdfd;
+$brand-color:      #3587cf;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+$grey-color-very-light:  #f6f6f6;
+
+// Width of the content area
+$content-width:    760px;
+
+$on-palm:          600px;
+$on-laptop:        1000px;
+
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "blog",
+        "syntax-highlighting"
+;

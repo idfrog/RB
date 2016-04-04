@@ -1,0 +1,15 @@
+# Site settings
+title: |
+  Ismail Abdurrahman Azizi — Web Designer & Developer Indonesia
+email: ismail.a.azizi@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Ismail Abdurrahman Azizi, Freelance FullStack website Developer and Designer. from Indonesia
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://damaera.github.io" # the base hostname & protocol for your site
+twitter_username: 
+github_username:  
+
+permalink: /:categories/:title
+
+# Build settings
+markdown: kramdown
